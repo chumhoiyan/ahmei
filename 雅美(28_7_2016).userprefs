@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Page\MainPage.cs">
+    <Files>
+      <File FileName="Assets\Script\Page\MainPage.cs" Line="61" Column="43" />
+      <File FileName="Assets\Script\SubPage\MainSubPage.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Util\SimpleAnimation.cs" Line="54" Column="112" />
+      <File FileName="Assets\Script\PageManager.cs" Line="48" Column="2" />
+      <File FileName="Assets\Script\Util\Page.cs" Line="36" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\MrNewbie\Desktop\雅美(28_7_2016)\Assets\Script\Util\SimpleAnimation.cs" line="53" />
+      <Breakpoint file="C:\Users\MrNewbie\Desktop\雅美(28_7_2016)\Assets\Script\Page\MainPage.cs" line="47" />
+      <Breakpoint file="C:\Users\MrNewbie\Desktop\雅美(28_7_2016)\Assets\Script\Page\MainPage.cs" line="42" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

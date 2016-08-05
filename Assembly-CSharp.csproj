@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
+	<ProjectGuid>{18445FB2-B4BC-2B7B-4D00-00921C235E77}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_4;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_32;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Script\Data\IconData.cs" />
+     <Compile Include="Assets\Script\Data\UserData.cs" />
+     <Compile Include="Assets\Script\Gamecontroller.cs" />
+     <Compile Include="Assets\Script\Icon\ProductIcon.cs" />
+     <Compile Include="Assets\Script\Item\DraggableClothesScript.cs" />
+     <Compile Include="Assets\Script\Item\ProductMatchItemScript.cs" />
+     <Compile Include="Assets\Script\LandingSenceScript.cs" />
+     <Compile Include="Assets\Script\LayerPosition.cs" />
+     <Compile Include="Assets\Script\Menu.cs" />
+     <Compile Include="Assets\Script\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Script\Page\AddItemPage.cs" />
+     <Compile Include="Assets\Script\Page\ApplyBuyerPage.cs" />
+     <Compile Include="Assets\Script\Page\BroadcastPage.cs" />
+     <Compile Include="Assets\Script\Page\ChangePasswordPage.cs" />
+     <Compile Include="Assets\Script\Page\ContactPage.cs" />
+     <Compile Include="Assets\Script\Page\CoverPage.cs" />
+     <Compile Include="Assets\Script\Page\EditAddressPage.cs" />
+     <Compile Include="Assets\Script\Page\EditInformationPage.cs" />
+     <Compile Include="Assets\Script\Page\EditNamePage.cs" />
+     <Compile Include="Assets\Script\Page\FeedbackPage.cs" />
+     <Compile Include="Assets\Script\Page\ForgetPWPage.cs" />
+     <Compile Include="Assets\Script\Page\HotProductPage.cs" />
+     <Compile Include="Assets\Script\Page\MainPage.cs" />
+     <Compile Include="Assets\Script\Page\MenegermentProductPage.cs" />
+     <Compile Include="Assets\Script\Page\MyMatchingPage.cs" />
+     <Compile Include="Assets\Script\Page\MyReservationPage.cs" />
+     <Compile Include="Assets\Script\Page\ProductCommentPage.cs" />
+     <Compile Include="Assets\Script\Page\ProductDetailPage.cs" />
+     <Compile Include="Assets\Script\Page\ProductMatchPage.cs" />
+     <Compile Include="Assets\Script\Page\RegisterPage.cs" />
+     <Compile Include="Assets\Script\Page\RegistrationPage.cs" />
+     <Compile Include="Assets\Script\Page\SccessPage.cs" />
+     <Compile Include="Assets\Script\Page\SearchProductPage.cs" />
+     <Compile Include="Assets\Script\Page\SearchingPage.cs" />
+     <Compile Include="Assets\Script\Page\SettingPage.cs" />
+     <Compile Include="Assets\Script\Page\ShopCategoryPage.cs" />
+     <Compile Include="Assets\Script\Page\ShopItemDetailPage.cs" />
+     <Compile Include="Assets\Script\Page\ShopItemPage.cs" />
+     <Compile Include="Assets\Script\Page\SignaturePage.cs" />
+     <Compile Include="Assets\Script\Page\UserDesignPage.cs" />
+     <Compile Include="Assets\Script\Page\UserProductPage.cs" />
+     <Compile Include="Assets\Script\PageManager.cs" />
+     <Compile Include="Assets\Script\Popup\QuestionairePopup.cs" />
+     <Compile Include="Assets\Script\SubPage\ContactNewsSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\ContactNoticeSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\FrameModeSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\FrameSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\FreeModeSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\MainSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\OwnerSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\ProductMatchSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\RecommendSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\ShopCategorySubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\ShopSubPage.cs" />
+     <Compile Include="Assets\Script\SubPage\ShoppingCartSubPage.cs" />
+     <Compile Include="Assets\Script\TestedJson.cs" />
+     <Compile Include="Assets\Script\Testedapplication.cs" />
+     <Compile Include="Assets\Script\Util\CustomScrollRect.cs" />
+     <Compile Include="Assets\Script\Util\IconBase.cs" />
+     <Compile Include="Assets\Script\Util\Page.cs" />
+     <Compile Include="Assets\Script\Util\Popup.cs" />
+     <Compile Include="Assets\Script\Util\SimpleAnimation.cs" />
+     <Compile Include="Assets\Script\Util\Singleton.cs" />
+     <Compile Include="Assets\Script\Util\SubPage.cs" />
+     <Compile Include="Assets\Script\application.cs" />
+     <Compile Include="Assets\Script\buttom.cs" />
+     <Compile Include="Assets\Script\createTag.cs" />
+     <Compile Include="Assets\Script\iTween.cs" />
+     <Compile Include="Assets\Script\slide_button.cs" />
+     <Compile Include="Assets\Script\touch.cs" />
+     <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\table_log-in.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>C:/Users/MrNewbie/Desktop/雅美_chum/Assets/Plugins/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>C:/Users/MrNewbie/Desktop/雅美_chum/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{DA4B88FD-627B-978D-F0D4-F9D3E4297BA3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

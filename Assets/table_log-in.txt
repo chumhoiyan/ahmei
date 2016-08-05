@@ -1,0 +1,16 @@
+{
+  "employees": 
+  [
+    {"id": 1,"Log": "tester01","password": 123401,"Email":"ABC@gmail.com","Telephone": 12345678},
+    {"id": 2,"Log": "tester02","password": 123402,"Email":"ABC@gmail.com","Telephone": 12345678},
+    {"id": 3,"Log": "tester03","password": 123403,"Email":"ABC@gmail.com","Telephone": 12345678},
+    {"id": 4,"Log": "tester04","password": 123404,"Email":"ABC@gmail.com","Telephone": 12345678},
+    {"id": 5,"Log": "tester05","password": 123405,"Email":"ABC@gmail.com","Telephone": 12345678},
+    {"id": 6,"Log": "tester06","password": 123406,"Email":"ABC@gmail.com","Telephone": 12345678},
+    {"id": 7,"Log": "tester07","password": 123407,"Email":"ABC@gmail.com","Telephone": 12345678},
+    {"id": 8,"Log": "tester08","password": 123408,"Email":"ABC@gmail.com","Telephone": 12345678},
+    {"id": 9,"Log": "tester09","password": 123409,"Email":"ABC@gmail.com","Telephone": 12345678},
+    {"id": 10,"Log": "tester10","password": 123410,"Email":"ABC@gmail.com","Telephone": 12345678}
+  ]
+  
+}
