@@ -45,16 +45,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Data\AnswerData.cs" />
+     <Compile Include="Assets\Script\Data\AppData.cs" />
      <Compile Include="Assets\Script\Data\IconData.cs" />
-     <Compile Include="Assets\Script\Data\UserData.cs" />
-     <Compile Include="Assets\Script\Gamecontroller.cs" />
+     <Compile Include="Assets\Script\Data\QuestionData.cs" />
+     <Compile Include="Assets\Script\Data\UserInfoData.cs" />
      <Compile Include="Assets\Script\Icon\ProductIcon.cs" />
      <Compile Include="Assets\Script\Item\DraggableClothesScript.cs" />
      <Compile Include="Assets\Script\Item\ProductMatchItemScript.cs" />
      <Compile Include="Assets\Script\LandingSenceScript.cs" />
-     <Compile Include="Assets\Script\LayerPosition.cs" />
-     <Compile Include="Assets\Script\Menu.cs" />
-     <Compile Include="Assets\Script\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Script\Network\Request.cs" />
+     <Compile Include="Assets\Script\Network\RequestUrlConfig.cs" />
      <Compile Include="Assets\Script\Page\AddItemPage.cs" />
      <Compile Include="Assets\Script\Page\ApplyBuyerPage.cs" />
      <Compile Include="Assets\Script\Page\BroadcastPage.cs" />
@@ -86,7 +87,8 @@
      <Compile Include="Assets\Script\Page\SignaturePage.cs" />
      <Compile Include="Assets\Script\Page\UserDesignPage.cs" />
      <Compile Include="Assets\Script\Page\UserProductPage.cs" />
-     <Compile Include="Assets\Script\PageManager.cs" />
+     <Compile Include="Assets\Script\Popup\ErrorPopup.cs" />
+     <Compile Include="Assets\Script\Popup\LoadingPopup.cs" />
      <Compile Include="Assets\Script\Popup\QuestionairePopup.cs" />
      <Compile Include="Assets\Script\SubPage\ContactNewsSubPage.cs" />
      <Compile Include="Assets\Script\SubPage\ContactNoticeSubPage.cs" />
@@ -100,23 +102,19 @@
      <Compile Include="Assets\Script\SubPage\ShopCategorySubPage.cs" />
      <Compile Include="Assets\Script\SubPage\ShopSubPage.cs" />
      <Compile Include="Assets\Script\SubPage\ShoppingCartSubPage.cs" />
-     <Compile Include="Assets\Script\TestedJson.cs" />
-     <Compile Include="Assets\Script\Testedapplication.cs" />
      <Compile Include="Assets\Script\Util\CustomScrollRect.cs" />
      <Compile Include="Assets\Script\Util\IconBase.cs" />
      <Compile Include="Assets\Script\Util\Page.cs" />
+     <Compile Include="Assets\Script\Util\PageManager.cs" />
      <Compile Include="Assets\Script\Util\Popup.cs" />
      <Compile Include="Assets\Script\Util\SimpleAnimation.cs" />
      <Compile Include="Assets\Script\Util\Singleton.cs" />
      <Compile Include="Assets\Script\Util\SubPage.cs" />
-     <Compile Include="Assets\Script\application.cs" />
-     <Compile Include="Assets\Script\buttom.cs" />
-     <Compile Include="Assets\Script\createTag.cs" />
-     <Compile Include="Assets\Script\iTween.cs" />
-     <Compile Include="Assets\Script\slide_button.cs" />
-     <Compile Include="Assets\Script\touch.cs" />
      <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween46.xml" />
      <None Include="Assets\table_log-in.txt" />
+     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\Plugins\Demigiant\DOTween\DOTween43.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -128,6 +126,15 @@
  </Reference>
  <Reference Include="DOTween">
  <HintPath>C:/Users/MrNewbie/Desktop/雅美_chum/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>C:/Users/MrNewbie/Desktop/雅美_chum/Assets/Plugins/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>C:/Users/MrNewbie/Desktop/雅美_chum/Assets/Plugins/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>C:/Users/MrNewbie/Desktop/雅美_chum/Assets/Plugins/Demigiant/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

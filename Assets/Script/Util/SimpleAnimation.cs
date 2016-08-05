@@ -55,12 +55,9 @@ public class SimpleAnimation : MonoBehaviour {
 				seq.AppendCallback (new TweenCallback(callback));
 			}
 		}
-		//if(isClosePage){
-			//seq.AppendCallback (new TweenCallback (GetComponent<Page> ().OnPageClose));
-		//}
 	}
 
-	public Sequence popUp(System.Action callback = null){
+	public Sequence popUp(){
 		Transform _TContent = transform.FindChild("Content");
 		Transform poppingTransform = (_TContent == null) ? transform : _TContent;
 
@@ -71,7 +68,7 @@ public class SimpleAnimation : MonoBehaviour {
 		return seq;
 	}
 
-	public Sequence popOut(System.Action callback = null){
+	public Sequence popOut(){
 		Transform _TContent = transform.FindChild("Content");
 		Transform poppingTransform = (_TContent == null) ? transform : _TContent;
 
@@ -93,15 +90,10 @@ public class SimpleAnimation : MonoBehaviour {
 	}
 
 	Sequence moveOut(bool isClosePage = false){
-
 		Sequence seq = DOTween.Sequence();
 
-		//int mIndex = PageManager.Instance.pageList.IndexOf (GetComponent<Page> ());
 		foreach (Page p in PageManager.Instance.pageList) {
-			int index = PageManager.Instance.pageList.IndexOf (p);
-			//if(index<=mIndex){
-				seq.Insert (0, p.transform.DOBlendableLocalMoveBy (new Vector3 (((RectTransform)p.transform).rect.width, 0, 0),animtionTime));
-			//}
+			seq.Insert (0, p.transform.DOBlendableLocalMoveBy (new Vector3 (((RectTransform)p.transform).rect.width, 0, 0),animtionTime));
 		}
 
 		return seq;

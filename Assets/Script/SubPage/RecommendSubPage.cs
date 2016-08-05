@@ -4,15 +4,20 @@ using System.Collections;
 
 public class RecommendSubPage: SubPage {
 
-	// Use this for initialization
-	void Start () {
+	protected void Awake(){
+		base.Awake ();
+	}
 	
+	// Use this for initialization
+	protected void Start () {
+		base.Start ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	protected void Update () {
+		base.Update ();
 	}
+
 	public override void OnBtnClick(Button button)
 	{
 		base.OnBtnClick(button);

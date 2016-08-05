@@ -20,7 +20,7 @@ public class FreeModeSubPage : SubPage {
 
 	void UpdateContent(){
 		GameObject draggableClothesResources = Resources.Load ("Prefabs/DraggableClothes") as GameObject;
-		foreach (IconBase iconBase in UserData.Instance.chosenAddClothes) {
+		foreach (IconBase iconBase in AppData.Instance.chosenAddClothes) {
 			GameObject draggableClothesClone = Instantiate(draggableClothesResources) as GameObject;
 			draggableClothesClone.GetComponent<DraggableClothesScript>().SetUp(iconBase);
 			

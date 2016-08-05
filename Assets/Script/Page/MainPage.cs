@@ -26,13 +26,13 @@ public class MainPage : Page {
 	}
 
 	// Use this for initialization
-	void Start () {
-		
+	protected void Start () {
+		base.Start ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	protected void Update () {
+		base.Update ();
 	}
 
 	public virtual void OnBtnClick(Button button){

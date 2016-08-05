@@ -31,7 +31,7 @@ public class ShopItemDetailPage : Page {
 		if (button.name == "DimBG") {
 			PageManager.Instance.ClosePage (this);
 		} else if (button.name == "ButtonAdd") {
-			UserData.Instance.chosenAddClothes.Add(_iconBase);
+			AppData.Instance.chosenAddClothes.Add(_iconBase);
 			PageManager.Instance.OpenPage ("AddItemPage");
 		}
 	}

@@ -9,6 +9,8 @@ using DG.Tweening;
 
 public class Page : MonoBehaviour {
 
+	public List<int> questionIds;
+
 	protected Transform _subPageContainer;
 	protected Dictionary<string, SubPage> subPageDict;
 	protected SubPage currentSubPage;
@@ -25,8 +27,22 @@ public class Page : MonoBehaviour {
 
 	protected void Start () {
 		StartCoroutine (LateStartIEnumerator ());
+		GetQuesionnaire ();
 	}
 
+	public void GetQuesionnaire(){
+		if (questionIds != null) {
+			if(questionIds.Count>0){
+				int questionId = questionIds[0];
+				if (!AppData.Instance.userInfoData.isQuestionDone (questionId)) {
+					QuestionairePopup popup = PageManager.Instance.OpenPopup ("QuestionairePopup") as QuestionairePopup;
+					popup.SetUp (AppData.Instance.questionDict [questionId], GetQuesionnaire);
+				}
+				questionIds.Remove(questionId);
+			}
+		}
+	}
+	
 	IEnumerator LateStartIEnumerator(){
 		yield return new WaitForEndOfFrame();
 		LateStart ();
@@ -139,7 +155,7 @@ public class Page : MonoBehaviour {
 
 	}
 
-	public void OnPageClose(){
+	public virtual void OnPageClose(){
 		PageManager.Instance.pageList.Remove (this);
 		Destroy (gameObject);
 	}
