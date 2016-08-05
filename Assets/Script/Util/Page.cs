@@ -35,8 +35,10 @@ public class Page : MonoBehaviour {
 			if(questionIds.Count>0){
 				int questionId = questionIds[0];
 				if (!AppData.Instance.userInfoData.isQuestionDone (questionId)) {
-					QuestionairePopup popup = PageManager.Instance.OpenPopup ("QuestionairePopup") as QuestionairePopup;
-					popup.SetUp (AppData.Instance.questionDict [questionId], GetQuesionnaire);
+					if(AppData.Instance.questionDict.ContainsKey(questionId)){
+						QuestionairePopup popup = PageManager.Instance.OpenPopup ("QuestionairePopup") as QuestionairePopup;
+						popup.SetUp (AppData.Instance.questionDict [questionId], GetQuesionnaire);
+					}
 				}
 				questionIds.Remove(questionId);
 			}
